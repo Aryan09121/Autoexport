@@ -65,7 +65,7 @@ const Sidebar = () => {
 							English
 						</button>
 					</SheetClose>
-					<SheetClose asChild className="mt-auto">
+					{/* <SheetClose asChild className="mt-auto">
 						<button
 							className="w-full outline-none border-none focus:outline-none focus:border-none  py-5 text-center text-2xl text-white grid grid-cols-3 px-10 font-semibold tracking-wide"
 							onClick={() => changeLanguage("ar")}
@@ -73,7 +73,7 @@ const Sidebar = () => {
 							<MdGTranslate className="text-4xl" />
 							العربية
 						</button>
-					</SheetClose>
+					</SheetClose> */}
 					<SheetClose asChild className="mt-auto">
 						<button
 							className="w-full outline-none border-none focus:outline-none focus:border-none  py-5 text-center text-2xl text-red-500 grid grid-cols-3 px-10 font-bold tracking-wide"
