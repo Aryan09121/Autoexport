@@ -128,7 +128,7 @@ const Dashboard = () => {
 					icon={buy}
 					color={"#7A0916"}
 					bg={"linear-gradient(to bottom right,#FFAC82,#FF5630)"}
-					value={totalProducts || ""}
+					value={totalProducts || 0}
 					label={t("dashboard.totalProducts")}
 				/>
 				<Card
