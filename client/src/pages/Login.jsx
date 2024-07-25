@@ -7,8 +7,8 @@ import loginimg from "@/assets/images/login.jpg";
 import { useNavigate } from "react-router-dom";
 
 export function Login() {
-	const [username, setUsername] = useState("");
-	const [password, setPassword] = useState("");
+	const [username, setUsername] = useState("test1@gmail.com");
+	const [password, setPassword] = useState("password@123");
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
