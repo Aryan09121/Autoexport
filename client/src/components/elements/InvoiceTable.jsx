@@ -55,7 +55,7 @@ const InvoiceTable = () => {
 					<TableHeader>
 						<TableRow className="text-4xl font-semibold">
 							<TableHead className="font-semibold">{t("dashboard.invoiceId")}</TableHead>
-							<TableHead className="font-semibold">{t("dashboard.customerName")}</TableHead>
+							<TableHead className="font-semibold">{t("dashboard.status")}</TableHead>
 							<TableHead className="font-semibold">{t("dashboard.date")}</TableHead>
 							<TableHead className="font-semibold">{t("dashboard.customerName")}</TableHead>
 							<TableHead className="font-semibold text-4xl">{t("dashboard.action")}</TableHead>
