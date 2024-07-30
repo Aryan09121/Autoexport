@@ -88,7 +88,19 @@ const ViewInvoice = () => {
 				`AED ${item.amount.toFixed(2)}`,
 				`AED ${(item.amount * item.quantity).toFixed(2)}`,
 			]),
-			styles: { fontSize: 9 },
+			styles: { fontSize: 9, textColor: [0, 0, 0], fillColor: [255, 255, 255] },
+			headStyles: {
+				fillColor: [245, 245, 245], // Ultra light gray
+				textColor: [0, 0, 0], // Black text for header
+			},
+			alternateRowStyles: {
+				fillColor: [255, 255, 255], // Ultra light gray
+				textColor: [0, 0, 0], // Black text for header
+			},
+			bodyStyles: {
+				fillColor: [255, 255, 255], // White
+				textColor: [0, 0, 0], // Black text for body
+			},
 		});
 
 		// Add total section
@@ -103,7 +115,7 @@ const ViewInvoice = () => {
 		doc.addImage(footerImage, "PNG", 0, 270, 210, 27);
 
 		// Save the PDF
-		doc.save(`Invoice_${billData.invId}.pdf`);
+		doc.save(`Invoice_${billData.customerName}.pdf`);
 	};
 
 	return (
@@ -120,7 +132,7 @@ const ViewInvoice = () => {
 						</div>
 						<div className="text-right">
 							<p>
-								<strong>TRN NO:</strong> 104323633900003
+								<strong>TRN NO:</strong> 304312636900903
 							</p>
 							<p>
 								<strong>Invoice No:</strong> {billData?.invId}
